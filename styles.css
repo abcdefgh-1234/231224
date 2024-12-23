@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+
+  /* Navbar Styling */
+  .navbar {
+    background-color: #4b9fec;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s;
+  }
+
+  .navbar a:hover,
+  .navbar a.active {
+    background-color: #555;
+  }
+
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  /* Dropdown Menu Styling */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+    padding: 12px 16px;
+  }
+
+  /* Mobile Navbar */
+  .navbar .menu {
+    display: flex;
+  }
+
+  .navbar .menu a {
+    padding: 10px 15px;
+  }
+
+  /* Mobile Hamburger Icon */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+  }
+
+  .hamburger div {
+    width: 25px;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+  }
+
+  

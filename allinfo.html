@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Inforamtion</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+    
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+    
+        nav button {
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    
+        nav button:hover {
+            background-color: #777;
+        }
+    
+        h1 {
+            text-align: center;
+            margin: 1.5rem 0;
+            font-size: 2rem;
+            color: #555;
+        }
+    
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        .container p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+    
+        .container p strong {
+            color: #555;
+        }
+    
+        .container p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <link rel="stylesheet" href="styles.css">
+        <nav class="navbar">
+            <div class="logo">Device Inforamtion</div>
+          <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="menu">
+            <a href="index.html" >Home</a>
+            <a href="./network.html">Network Info</a>
+            <a href="./allinfo.html">System Info</a>
+            <a href="./installedsw.html">Active Processes</a>
+            <a href="./patches.html">Patches Update</a>
+            <a href="./anti.html">Anti Virus Info</a>
+          </div>
+        </nav>
+      </header>
+
+    <div class="container">
+        <h1>System Information</h1>
+        <div id="system-info"></div>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html>

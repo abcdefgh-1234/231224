@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patch Inforamtion</title>
+</head>
+<body>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        nav button {
+            background-color: #555;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        nav button:hover {
+            background-color: #777;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+
+        table {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            border-collapse: collapse;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        td {
+            color: #555;
+        }
+
+        td[colspan] {
+            text-align: center;
+            color: #777;
+        }
+
+        #patch-info{
+            color: #ffffff; /* White text */
+            background-color: #ff5722; /* Orange background */
+            padding: 10px 15px; /* Padding around the text */
+            border-radius: 5px; /* Rounded corners */
+            /* text-align: center; Center the text */
+            margin: 10px auto; /* Add some spacing and center the paragraphs */
+            max-width: 600px; /* Optional: Limit the width of the warnings */
+            font-weight: bold; /* Bold text */
+            font-family: Arial, sans-serif; /* Use a clean font */
+        }
+        #update-info{
+            padding : 10px 15px;
+            margin: 10px auto;
+            padding: 10px 15px;
+            max-width: 600px;
+            font-weight: bold;
+            background-color: #4b9fec;
+            color: white;
+            text-align: center;
+        }
+    </style>
+
+    <header>
+        <link rel="stylesheet" href="styles.css">
+        <nav class="navbar">
+            <div class="logo">Device Inforamtion</div>
+          <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="menu">
+            <a href="index.html" >Home</a>
+            <a href="./network.html">Network Info</a>
+            <a href="./allinfo.html">System Info</a>
+            <a href="./installedsw.html">Active Processes</a>
+            <a href="./patches.html">Patches Update</a>
+            <a href="./anti.html">Anti Virus Info</a>
+          </div>
+        </nav>
+    </header>
+
+    <h1>Patch Updates</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>HotFix ID</th>
+                <th>Description</th>
+                <th>Installed On</th>
+                <th>Installed By</th>
+            </tr>
+        </thead>
+        <tbody id="patch-table">
+            <!-- Patch data will be dynamically inserted here -->
+        </tbody>
+    </table>
+    
+    <div id="patch-info">Enter a Hotfix ID to see details.</div>
+    <div id="update-info"></div>
+
+
+
+    <script src="renderer.js"></script>
+</body>
+</html>.

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Installed Software info</title>
+</head>
+<body>
+
+  <header>
+    <link rel="stylesheet" href="styles.css">
+    <nav class="navbar">
+      <div class="logo">Device Inforamtion</div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="menu">
+        <a href="./index.html">Home</a>
+        <a href="./network.html">Network Info</a>
+        <a href="./allinfo.html">System Info</a>
+        <a href="./installedsw.html">Active Processes</a>
+        <a href="./patches.html">Patches Update</a>
+        <a href="./anti.html">Anti Virus Info</a>
+      </div>
+    </nav>
+  </header>
+
+  <h1>Installed Software Information</h1>
+  <table border="1" id="software-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Install Location</th>
+        <th>Install Date</th>
+        <th>Version</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Data will be inserted here dynamically -->
+    </tbody>
+  </table>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

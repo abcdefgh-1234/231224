@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Inforamtion</title>
+</head>
+<body>
+
+  <style>
+    body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        nav button {
+            background-color: #555;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        nav button:hover {
+            background-color: #777;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+
+        #network-info {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #network-info ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #network-info li {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+
+        #network-info strong {
+            color: #555;
+        }
+  </style>
+
+    <header>
+        <link rel="stylesheet" href="styles.css">
+        <nav class="navbar">
+          <div class="logo">Device Inforamtion</div>
+          <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="menu">
+            <a href="index.html" >Home</a>
+            <a href="./network.html">Network Info</a>
+            <a href="./allinfo.html">System Info</a>
+            <a href="./installedsw.html">Active Processes</a>
+            <a href="./patches.html">Patches Update</a>
+            <a href="./anti.html">Anti Virus Info</a>
+          </div>
+        </nav>
+    </header>
+
+    <h1>Network Information</h1>
+    <div>
+      <div id="network-info"></div>
+    </div>
+    
+    <script src="renderer.js"></script>
+</body>
+</html>

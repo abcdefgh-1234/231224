@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti Virus Inforamtion</title>
+</head>
+<body>
+
+    <style>
+        .styled-table {
+          border-collapse: collapse;
+          margin: 5px 0;
+          font-size: 18px;
+          font-family: Arial, sans-serif;
+          width: 100%;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          border: 1px solid #dddddd;
+        }
+      
+        .styled-table thead tr {
+          background-color: #4CAF50;
+          color: white;
+          text-align: left;
+        }
+      
+        .styled-table th, .styled-table td {
+          padding: 12px 15px;
+        }
+      
+        .styled-table tbody tr {
+          border-bottom: 1px solid #dddddd;
+        }
+      
+        .styled-table tbody tr:nth-of-type(even) {
+          background-color: #f3f3f3;
+        }
+      
+        .styled-table tbody tr:hover {
+          background-color: #f1f1f1;
+        }
+      
+        .styled-table tbody tr:last-of-type {
+          border-bottom: 2px solid #4CAF50;
+        }
+      
+        .styled-table td {
+          word-wrap: break-word; /* Ensures text doesn't overflow the table cell */
+        }
+
+        #antivirus-running {
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .antivirus-running-process {
+        padding: 3px 0;  /* Reduced padding between each process */
+        margin-bottom: 5px;  /* Reduced margin between each process */
+        border-bottom: 1px solid #ddd;
+      }
+      .antivirus-running-process:last-child {
+        border-bottom: none;
+      }
+
+
+        #antivirus-output{
+          padding : 10px 15px;
+            margin: 10px auto;
+            padding: 10px 15px;
+            max-width: 600px;
+            font-weight: bold;
+            background-color: #4b9fec;
+            color: white;
+            text-align: center;
+        }
+    </style>
+      
+
+    <header>
+        <link rel="stylesheet" href="styles.css">
+        <nav class="navbar">
+            <div class="logo">Device Inforamtion</div>
+          <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="menu">
+            <a href="./index.html">Home</a>
+            <a href="./network.html">Network Info</a>
+            <a href="./allinfo.html">System Info</a>
+            <a href="./installedsw.html">Active Processes</a>
+            <a href="./patches.html">Patches Update</a>
+            <a href="./anti.html">Anti Virus Info</a>
+          </div>
+        </nav>
+    </header>
+
+    
+
+    <h1>Installed OfficeScan Software</h1>
+    <div id="officescan-data"></div>
+
+    <div id="antivirus-output">Loading..</div>
+    <div id="antivirus-update"></div>
+    <pre id="antivirus-running">Fetching data...</pre> <!-- Currently running anti virus-->
+    
+  
+
+    <script src="renderer.js"></script>
+</body>
+</html>
